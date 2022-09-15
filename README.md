@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3a3c487b-c2a0-4634-ad3c-91e00ebbfb19/deploy-status?branch=main)](https://app.netlify.com/sites/themasterminds/deploys)
 <p align="center">
   <p align="center">
     <a href="https://www.themasterminds.tech" target="_blank">
@@ -25,7 +26,7 @@ This is a very simple e-commerce website built with Django.
 
 The website displays products. Users can add and remove products to/from their cart while also specifying the quantity of each item. They can then enter their address and choose Stripe to handle the payment processing.
 
-[![alt text](media_root/home.png) "Logo")]()
+[![alt text](media_root/home.png)
 
 ---
 
@@ -77,9 +78,7 @@ This project is part of a [series on YouTube](https://youtu.be/z4USlooVXG0) that
 
 <a href="https://www.youtube.com/channel/UC_3zmR3ums_dGGuTcafO03A" target="_blank"><img src="https://img.shields.io/badge/YouTube-%23E4405F.svg?&style=flat-square&logo=youtube&logoColor=white" alt="YouTube"></a>
 <a href="https://www.twitter.com/Kennedy_Sibeso" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231877F2.svg?&style=flat-square&logo=twitter&logoColor=white" alt="Twitter"></a>
-
 <a href="https://www.linkedin.com/in/kennedykalaluka" target="_blank"><img src="https://img.shields.io/badge/linkedin-%231877F2.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="Linkedin"></a>
-
 <a href="https://www.facebook.com/kennedysimasiku.kalalukasibeso" target="_blank"><img src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=flat-square&logo=facebook&logoColor=white" alt="Facebook"></a>
 
 </div>
