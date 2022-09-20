@@ -3,7 +3,7 @@ import django_heroku
 import dj_database_url
 
 DEBUG = True
-ALLOWED_HOSTS = [ 'gentle-temple-74660.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = [ 'https://shielded-sierra-06095.herokuapp.com/', '127.0.0.1']
 
 DATABASES = {
     'default': {
