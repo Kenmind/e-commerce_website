@@ -1,4 +1,5 @@
 from .base import *
+import django_heroku
 import dj_database_url
 
 DEBUG = True
@@ -19,3 +20,5 @@ STRIPE_SECRET_KEY = config('STRIPE_TEST_SECRET_KEY')
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+django_heroku.settings(locals())
