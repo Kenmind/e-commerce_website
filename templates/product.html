@@ -11,7 +11,7 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img src="../media_root/{{ object.image }}">
+          <img src="{{ item.image.url }}" class="card-img-top">
 
         </div>
         <!--Grid column-->
@@ -23,9 +23,7 @@
           <div class="p-4">
 
             <div class="mb-3">
-              <a href="">
                 <span class="badge purple mr-1">{{ object.get_category_display }}</span>
-              </a>
             </div>
 
             <p class="lead">

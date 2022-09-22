@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{% block head_title %}{% endblock %}</title>
-  <link rel="icon" type="image/png" href="../media_root/logo16.png">
+  <link rel="icon" type="image/png" href={% static '../media_root/logo16.png' %}>
   {% block extra_head %}
   {% endblock %}
 
