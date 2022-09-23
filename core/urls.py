@@ -10,7 +10,7 @@ from .views import (
     PaymentView,
     AddCouponView,
     RequestRefundView,
-    searchbar,
+    searchView,
     StringsView,
     WindsView,
     BrassView,
@@ -33,7 +33,7 @@ urlpatterns = [
     path('remove-from-cart/<slug>/', remove_from_cart, name='remove-from-cart'),
     path('remove-item-from-cart/<slug>/', remove_single_item_from_cart,
          name='remove-single-item-from-cart'),
-    path('searchbar/', searchbar, name='search'),
+    path('search/', searchView.as_view(), name='search'),
     path('payment/<payment_option>/', PaymentView.as_view(), name='payment'),
     path('request-refund/', RequestRefundView.as_view(), name='request-refund')
 ]

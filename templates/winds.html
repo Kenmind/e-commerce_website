@@ -44,6 +44,15 @@
 	    </li>
 
           </ul>
+          <!-- Links -->
+
+          <form class="form-inline" action="{% url 'core:search' %}" method="get">
+              {% csrf_token %}
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search Instruments" name="q" aria-label="Search">
+              <button type="submit" class="btn btn">Search</button>
+            </div>
+          </form>
         </div>
         <!-- Collapsible content -->
 

@@ -10,6 +10,7 @@ from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from django.views.generic import ListView, DetailView, View
+from django.db.models import Q
 
 from .forms import CheckoutForm, CouponForm, RefundForm, PaymentForm
 from .models import Item, OrderItem, Order, Address, Payment, Coupon, Refund, UserProfile
@@ -17,14 +18,17 @@ from .models import Item, OrderItem, Order, Address, Payment, Coupon, Refund, Us
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
-def searchbar(request):
-    if request.method == 'POST':
-        searched = request.POST['searched']
-        instruments = Item.objects.filter(title__contains=searched) 
-        return render(request, 'searchbar.html',
-        {'searched': searched}, {'instruments': instruments})
-    else:
-        return render(request, 'searchbar.html', {})
+class searchView(ListView):
+    model = Item
+    paginate_by = 100
+    template_name = "searchbar.html"
+
+    def get_queryset(self):
+        query = self.request.GET.get("q")
+        object_list = Item.objects.filter(
+            Q(title__icontains=query) | Q(category__icontains=query) | Q(description__icontains=query)
+        )
+        return object_list
 
 
 def create_ref_code():
