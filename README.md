@@ -1,4 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3a3c487b-c2a0-4634-ad3c-91e00ebbfb19/deploy-status?branch=main)](https://app.netlify.com/sites/themasterminds/deploys)
 <p align="center">
   <p align="center">
     <a href="https://www.themasterminds.tech" target="_blank">
