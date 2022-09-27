@@ -1,7 +1,7 @@
 <p align="center">
   <p align="center">
     <a href="https://www.themasterminds.tech" target="_blank">
-      <img src="media_root/logo.png" alt="TheMastermindsTech" height="72">
+      <img src="static_in_env/images/logo.png" alt="TheMastermindsTech" height="72">
     </a>
   </p>
   <p align="center">
