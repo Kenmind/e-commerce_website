@@ -1,6 +1,6 @@
 <p align="center">
   <p align="center">
-    <a href="https://www.themasterminds.tech" target="_blank">
+    <a href="https://store.themasterminds.tech" target="_blank">
       <img src="static_in_env/images/logo.png" alt="TheMastermindsTech" height="72">
     </a>
   </p>
